@@ -1,3 +1,4 @@
+
 public class SharedData 
 {
 	private int [] array;
@@ -17,7 +18,7 @@ public class SharedData
 	}
 
 	public void setWinArray(boolean [] winArray) 
-	{
+	{	
 		this.winArray = winArray;
 	}
 
