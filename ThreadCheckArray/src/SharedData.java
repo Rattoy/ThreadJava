@@ -19,6 +19,7 @@ public class SharedData
 
 	public void setWinArray(boolean [] winArray) 
 	{	
+		System.out.println("hello");
 		this.winArray = winArray;
 	}
 
