@@ -25,6 +25,7 @@ public class SharedData
 
 	public int[] getArray() 
 	{
+		System.out.println("testing");
 		return array;
 	}
 
