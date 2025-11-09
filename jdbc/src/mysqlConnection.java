@@ -11,6 +11,7 @@ public class mysqlConnection {
 	public static void main(String[] args) 
 	{
 
+		
         try 
         {
 			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testDB?serverTimezone=Asia/Jerusalem&useSSL=false", "root", "Aa12345");
