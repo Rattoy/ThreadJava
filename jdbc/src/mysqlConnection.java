@@ -137,7 +137,21 @@ public class mysqlConnection {
 //		 		
 //	}
 //	
-	
+//	public static void parsingTheData(Connection con) {
+//	Statement stmt;
+//	try {
+//		stmt = con.createStatement();
+//
+//		stmt.executeUpdate("UPDATE flights SET Status=\"Expected 14:30\" WHERE Flight='KU101'");
+//		
+//} catch (SQLException e) {
+//		// TODO Auto-generated catch block
+//		e.printStackTrace();
+//	}
+//	
+//
+//	
+//}
 	
 	
 	
