@@ -23,7 +23,7 @@ import ocsf.server.*;
  * @author Paul Holden
  * @version July 2000
  */
-<<<<<<< HEAD
+
 @SuppressWarnings("unused")
 public class EchoServer extends AbstractServer {
 	// Class variables *************************************************
@@ -54,31 +54,6 @@ public class EchoServer extends AbstractServer {
 	 * @param client The connection from which the message originated.
 	 */
 
-	public void handleMessageFromClient(Object msg, ConnectionToClient client) {
-		System.out.println("Message received: " + msg + " from " + client);
-		String s = (String)msg;
-		ArrayList<String> ls = new ArrayList<>(List.of(s.substring(1,s.length()-1).split(", ")));
-//		s.toCharArray();
-=======
-public class EchoServer extends AbstractServer {
-	// Class variables *************************************************
-
-	/**
-	 * The default port to listen on.
-	 */
-	final public static int DEFAULT_PORT = 5555;
-	private static MySQLConnection mySql;
-
-	// Constructors ****************************************************
-
-	/**
-	 * Constructs an instance of the echo server.
-	 *
-	 * @param port The port number to connect on.
-	 */
-	public EchoServer(int port) {
-		super(port);
-	}
 
 	// Instance methods ************************************************
 
@@ -94,7 +69,7 @@ public class EchoServer extends AbstractServer {
 		String s = (String)msg;
 		ArrayList<String> ls = new ArrayList<>(List.of(s.substring(1,s.length()-1).split(", ")));
 		s.toCharArray();
->>>>>>> refs/remotes/origin/master
+
 		
 		
 		try {

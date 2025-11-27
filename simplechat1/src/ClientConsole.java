@@ -77,11 +77,11 @@ public class ClientConsole implements ChatIF
       String message;
       List<String>ls = new ArrayList<>();
       ls.add("Bob");
-<<<<<<< HEAD
+
       ls.add("1234589");
-=======
+
       ls.add("123458");
->>>>>>> refs/remotes/origin/master
+
       ls.add("VIF project");
       ls.add("7654321");
       while (true) 

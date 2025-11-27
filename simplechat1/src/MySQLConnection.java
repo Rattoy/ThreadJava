@@ -12,7 +12,7 @@ import java.util.List;
 public class MySQLConnection {
 	private Connection conn;
 	
-<<<<<<< HEAD
+
 	  public void connectToDB() {
 		
 	      try 
@@ -54,51 +54,9 @@ public class MySQLConnection {
 			
 			
 			} catch (SQLException e) {	e.printStackTrace();}
-=======
-	  public  void connectToDB() {
-		
-	      try 
-	      {
-	    	  conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/users?serverTimezone=Asia/Jerusalem&useSSL=false", "root", "Aa123456");
-	          System.out.println("SQL connection succeed");
-	          
-//	          createTableUser(conn);
-	   	} catch (SQLException ex) 
-	   	    {/* handle any errors*/
-	          System.out.println("SQLException: " + ex.getMessage());
-	          System.out.println("SQLState: " + ex.getSQLState());
-	          System.out.println("VendorError: " + ex.getErrorCode());
-	          }
-	  }
-	
-	  public void ParsingToDB(ArrayList<String> lst) {
-			Statement stmt;
-			
-			try {
-				PreparedStatement ps = conn.prepareStatement("INSERT INTO users VALUES(?,?,?,?)");
-		 			ps.setString(1, lst.get(0));
-		 			ps.setString(2,  lst.get(1));
-		 			ps.setString(3,  lst.get(2));
-		 			ps.setString(4,  lst.get(3));
-		 			ps.executeUpdate();	 			
 
-		} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-	  }
-	  
-		public static void createTableUser(Connection con1){
-		Statement stmt;
-		try {
-			stmt = con1.createStatement();
-			stmt.executeUpdate("create table users(username VARCHAR(10),ID VARCHAR(40), Department VARCHAR(40), Tel VARCHAR(40));");
-			
-			
-		} catch (SQLException e) {	e.printStackTrace();}
->>>>>>> refs/remotes/origin/master
-		 		
-	}
+		}
+}
 	
 		
 		
@@ -217,6 +175,4 @@ public class MySQLConnection {
 
 	
 	
-}
-
 
