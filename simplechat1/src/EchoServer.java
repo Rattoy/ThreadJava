@@ -23,6 +23,7 @@ import ocsf.server.*;
  * @author Paul Holden
  * @version July 2000
  */
+@SuppressWarnings("unused")
 public class EchoServer extends AbstractServer {
 	// Class variables *************************************************
 
@@ -56,7 +57,7 @@ public class EchoServer extends AbstractServer {
 		System.out.println("Message received: " + msg + " from " + client);
 		String s = (String)msg;
 		ArrayList<String> ls = new ArrayList<>(List.of(s.substring(1,s.length()-1).split(", ")));
-		s.toCharArray();
+//		s.toCharArray();
 		
 		
 		try {

@@ -12,7 +12,7 @@ import java.util.List;
 public class MySQLConnection {
 	private Connection conn;
 	
-	  public  void connectToDB() {
+	  public void connectToDB() {
 		
 	      try 
 	      {
@@ -46,13 +46,13 @@ public class MySQLConnection {
 	  }
 	  
 		public static void createTableUser(Connection con1){
-		Statement stmt;
-		try {
+			Statement stmt;
+			try {
 			stmt = con1.createStatement();
 			stmt.executeUpdate("create table users(username VARCHAR(10),ID VARCHAR(40), Department VARCHAR(40), Tel VARCHAR(40));");
 			
 			
-		} catch (SQLException e) {	e.printStackTrace();}
+			} catch (SQLException e) {	e.printStackTrace();}
 		 		
 	}
 	
