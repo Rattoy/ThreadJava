@@ -78,12 +78,14 @@ public class ClientConsole implements ChatIF
       List<String>ls = new ArrayList<>();
       ls.add("Bob");
 
-      ls.add("1234589");
-
-      ls.add("123458");
+      ls.add("5656565");
 
       ls.add("VIF project");
-      ls.add("7654321");
+      ls.add("123458");
+      
+     
+    
+    
       while (true) 
       {
         message = fromConsole.readLine();
